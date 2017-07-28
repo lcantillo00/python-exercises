@@ -18,3 +18,5 @@ elif nw==6:
      print("you are going to return  on day " + str(nw) +"saturday")
 else:
      print("you are going to return  on day " + str(nw) +" sunday")
+for i in weekdays:
+    

@@ -1,12 +1,18 @@
 #Chap 6 # Assignment
 
 def isLeap(year):
-    if str(year)[2:]=="00" and year % 400 == 0:
+    if year%100==0 and year%400==0:
         return True
-    elif str(year)[2:]!="00" and year % 4 == 0:
+    elif year%100!=0 and year%4==0:
         return True
     else:
         return False
+    # if str(year)[2:]=="00" and year % 400 == 0:
+    #     return True
+    # elif str(year)[2:]!="00" and year % 4 == 0:
+    #     return True
+    # else:
+    #     return False
 
 # Below is a set of tests so you can check if your code is correct.
 # Do not copy this part into Vocareum.

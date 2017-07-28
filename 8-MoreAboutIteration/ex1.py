@@ -1,11 +1,9 @@
-def newtonSqrt(n):
-    approx = 0.5 * n
-    better = 0.5 * (approx + n/approx)
-    while better != approx:
-        approx = better
-        better = 0.5 * (approx + n/approx)
-        print("Approx:", better)
-    return approx
+
+def print_triang_num(n):
+    for x in range(1, n+1):
+        c=int(x * (x + 1) / 2)
+        print(x, '\t',c)
 
 
-print("Final approx:", newtonSqrt(25))
+
+print_triang_num(5)

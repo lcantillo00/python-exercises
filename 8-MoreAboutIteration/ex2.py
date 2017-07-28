@@ -1,9 +1,8 @@
-
-def print_triang_num(n):
-    for x in range(1, n+1):
-        c=int(x * (x + 1) / 2)
-        print(x, '\t',c)
-
-
-
-print_triang_num(5)
+import turtle
+import random
+wn=turtle.Screen()
+l=turtle.Turtle()
+for i in range(40):
+    x=random.randint(1,90)
+    l.forward(40)
+    l.left(x)

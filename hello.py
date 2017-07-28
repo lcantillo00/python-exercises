@@ -1,0 +1,2 @@
+import otherfile
+otherfile.name()

@@ -16,3 +16,18 @@ keys = letter_count.keys()
 keys.sort()
 for char in keys:
         print(char, letter_count[char])
+# ///////////////////////////////////another way
+mystr=input("enter you string")
+mystr.lower()
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+count={}
+for i in mystr:
+    if i in alphabet:
+        if i in count:
+            count[i]=count[i]+1
+        else:
+            count[i]=1
+mykeys=count.keys()
+mykeys.sort()
+for i in mykeys:
+    print(i,count[i])

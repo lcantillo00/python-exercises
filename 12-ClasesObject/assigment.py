@@ -29,3 +29,46 @@ testEqual( Point(20, 20).slopeFromOrigin(), 1 )
 testEqual( Point(4, -10).slopeFromOrigin(), -2.5 )
 testEqual( Point(-4, -10).slopeFromOrigin(), 2.5 )
 testEqual( Point(-6, 0).slopeFromOrigin(), 0 )
+
+
+# //////////////////////////////////////////////////////////////
+# TODO: add the Car class
+class Car:
+    def __init__(self,gas_level):
+        self.gaslevel=gas_level
+    def add_gas(self):
+        return self.gaslevel
+    def fill_up(self):
+        if self.gaslevel==13 :
+            return 0
+        else:
+            if (13-self.gaslevel)<=0:
+                return 0
+            else:
+                return 13-self.gaslevel
+    
+
+# some tests to check your code, Do Not Post These in Vocareum
+from test import testEqual
+testEqual( Car(10).fill_up(), 3 )
+testEqual( Car(20).fill_up(), 0 )
+testEqual( Car(5.5).fill_up(), 7.5 )
+testEqual( Car(12.5).fill_up(), 0.5 )
+testEqual( Car(13).fill_up(), 0 )
+
+my new carr assigment
+class Car():
+    def __init__(self,gas_level):
+        self.gas_level=float(gas_level)
+    def add_gass(self,amount):
+         self.gass_level=float(amount)
+        
+    
+    
+    def fill_up(self):
+        if self.gas_level<13:
+            result= 13-self.gas_level
+        else:
+            result= 0
+          
+        return result

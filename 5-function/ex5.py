@@ -13,3 +13,8 @@ tess.color('hotpink')
 tess.pensize(3)
 
 drawPoly(tess,3,40)
+# ////////////////////
+t=3
+for i in range(t):
+    tess.forward(40)
+    tess.left(360/t)
