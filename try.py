@@ -58,16 +58,31 @@
 #             print(i,end="")
 # print(substitution("hello lily",5))
 
-credit_card_number=input("what is your credit card number:")
+# for i in range(len(mylist):
+#     for x in range(len(mylist[i])):
+#         print(x,i)
 
-if credit_card_number !=16:
+# mylist=[100,3,6]
 
-    while True:
+# result=min(mylist)
 
-        input("The credit card must be 16 digits, enter the number again.")
+# print(result)
+# car=["hon","mercedes"]
+# planes=["rgt6","fdss"]
 
-        break
+# def mynames(mylist):
+#     for i in range(len(mylist)):
+#         print(mylist[i])
+# print(mynames(car))
+# print(mynames(planes))
 
-else:
 
-    print("This is a valid number")
+
+
+# def recfactorial(num):
+#     if num<=1:
+#         return 1
+#     else:
+#         return num *recfactorial(num-1)
+cars=["lily",["lol",["lou","loe"]]]
+print(cars[1][1][1])

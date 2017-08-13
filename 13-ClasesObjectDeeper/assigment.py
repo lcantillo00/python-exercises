@@ -14,16 +14,27 @@ class Chatbot:
 
 
 # TODO define a class called BoredChatbot
-    def BoredChatBot(self, prompt_answer):
+class BoredChatbot(Chatbot):
+   
+    def response(self,prompt_answer):
+   
         if len(prompt_answer)>20:
             return "zzz... Oh excuse me, I dozed off reading your essay."
         else:
-            return ("is very interesting you say " + prompt_answer)
+            return Chatbot.response(self,prompt_answer)
+           
+def main():
+    myname=input("enter your name")
+    lily=BoredChatbot(myname)
+    resp=input("enter your response")
+    myresp=lily.response(resp)
+    print(myresp)
+  
+     
 
-lily = Chatbot("Lily")
-human_message = input(lily.greeting())
-print(lily.BoredChatBot(human_message))
-# ///////////////////////////////////
+if __name__ == "__main__":
+    main()
+
 
 
 

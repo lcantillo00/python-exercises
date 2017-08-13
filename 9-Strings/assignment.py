@@ -29,7 +29,8 @@ def analyze_text(text):
       if i.isalpha(): 
          individual_let=individual_let+i.lower()
   count=individual_let.count('e')
-  percent_e=count*100/len(individual_let)
+  print(count)
+  percent_e=int(count*100/len(individual_let))
   
 
   result= "The text contains {} alphabetic characters, of which {} ({}%)are 'e'.".format(len(individual_let),count,str(percent_e))
